@@ -47,6 +47,95 @@ nav a:hover {
     color: var(--azul-claro)
 }
 
+/* Conteúdo Principal */
+main {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    color: var(--preto);
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: var(--azul-escuro);
+    margin-bottom: 20px;
+}
+
+/* Filtros de busca */
+.filtros {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 20px;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.filtros input {
+    padding: 5px;
+    width: 100%;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 5px;
+}
+
+/* Tabela */
+.tabela-produtos table {
+    width: 100%;
+    background-color: var(--branco);
+    border-collapse: collapse;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.tabela-produtos th, .tabela-produtos td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+.tabela-produtos th {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+tbody {
+    cursor: pointer;
+}
+
+tr.selecionado {
+    background-color: var(--azul-claro);
+}
+
+/* Botões */
+.botoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.botoes button {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 100px;
+}
+
+.botoes button:hover {
+    background-color: var(--azul-escuro);
+}
+
+
 /* Rodapé */
 footer {
     text-align: center;
