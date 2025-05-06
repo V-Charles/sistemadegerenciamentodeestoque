@@ -84,7 +84,7 @@ h1 {
 }
 
 /* Tabela */
-.tabela-produtos table {
+.tabela-listagem table {
     width: 100%;
     background-color: var(--branco);
     border-collapse: collapse;
@@ -94,13 +94,13 @@ h1 {
     margin-bottom: 30px;
 }
 
-.tabela-produtos th, .tabela-produtos td {
+.tabela-listagem th, .tabela-listagem td {
     padding: 15px;
     text-align: center;
     border-bottom: 1px solid var(--cinza-claro);
 }
 
-.tabela-produtos th {
+.tabela-listagem th {
     background-color: var(--azul-escuro);
     color: var(--branco);
 }

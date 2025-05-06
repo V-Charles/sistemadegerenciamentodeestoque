@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - SGE</title>
+    <title>Fornecedores - SGE</title>
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
@@ -20,17 +20,17 @@
         </nav>
     </header>
     <main>
-        <h1>Produtos</h1>
-        <p class="sub-text">*Use os filtros para buscar produtos específicos</p>
+        <h1>Fornecedores</h1>
+        <p class="sub-text">*Use os filtros para buscar por fornecedores específicos</p>
 
         <section class="filtros">
             <label>ID:</label>
             <input type="text">
             <label>Nome:</label>
             <input type="text">
-            <label>Categoria:</label>
+            <label>Telefone:</label>
             <input type="text">
-            <label>Fornecedor:</label>
+            <label>CNPJ:</label>
             <input type="text">
         </section>
 
@@ -38,60 +38,50 @@
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Nome do produto</th>
-                        <th>Categoria</th>
-                        <th>Data do registro</th>
-                        <th>Fornecedor</th>
-                        <th>Quantidade total</th>
-                        <th>Valor atual</th>
+                        <th>ID:</th>
+                        <th>Nome do fornecedor:</th>
+                        <th>E-mail:</th>
+                        <th>Telefone:</th>
+                        <th>CNPJ:</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr onclick="selecionarLinha(this)">
                         <td>1</td>
-                        <td>Produto A</td>
-                        <td>Categoria 1</td>
-                        <td>DD/MM/YYYY</td>
-                        <td>Fornecedor Z</td>
-                        <td>25</td>
-                        <td>R$ 150,00</td>
+                        <td>Fornecedor 1</td>
+                        <td>fornecedor1@gmail.com</td>
+                        <td>(11)1111-1111</td>
+                        <td>11.111.111/1111-11</td>
                     </tr>
                     <tr onclick="selecionarLinha(this)">
                         <td>2</td>
-                        <td>Produto B</td>
-                        <td>Categoria 2</td>
-                        <td>DD/MM/YYYY</td>
-                        <td>Fornecedor X</td>
-                        <td>12</td>
-                        <td>R$ 15,00</td>
+                        <td>Fornecedor 2</td>
+                        <td>fornecedor2@gmail.com</td>
+                        <td>(22)2222-2222</td>
+                        <td>22.222.222/2222-22</td>
                     </tr>
                     <tr onclick="selecionarLinha(this)">
                         <td>3</td>
-                        <td>Produto C</td>
-                        <td>Categoria 3</td>
-                        <td>DD/MM/YYYY</td>
-                        <td>Fornecedor Y</td>
-                        <td>74</td>
-                        <td>R$ 147,90</td>
+                        <td>Fornecedor 3</td>
+                        <td>fornecedor3@gmail.com</td>
+                        <td>(33)3333-3333</td>
+                        <td>33.333.333/3333-33</td>
                     </tr>
                     <tr onclick="selecionarLinha(this)">
                         <td>4</td>
-                        <td>Produto D</td>
-                        <td>Categoria 2</td>
-                        <td>DD/MM/YYYY</td>
-                        <td>Fornecedor Y</td>
-                        <td>37</td>
-                        <td>R$ 220,00</td>
+                        <td>Fornecedor 4</td>
+                        <td>fornecedor4@gmail.com</td>
+                        <td>(44)4444-4444</td>
+                        <td>44.444.444/4444-44</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <div class="botoes">
-            <button>Realizar movimentação</button>
-            <button>Editar produto</button>
-            <button>Cadastrar novo produto</button>
+            <button>Excluir fornecedor</button>
+            <button>Editar fornecedor</button>
+            <button>Cadastrar novo fornecedor</button>
         </div>
 
     </main>
