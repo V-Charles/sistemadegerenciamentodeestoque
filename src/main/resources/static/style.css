@@ -65,6 +65,69 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Conteúdo Home */
+.subtitulo {
+    color: var(--preto);
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: var(--branco);
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1 1 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 28px;
+    color: var(--preto);
+}
+
+.card span {
+    color: var(--azul-claro);
+    font-size: 14px;
+}
+
+.atalhos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.atalho-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.atalho-btn:hover {
+    background-color: var(--azul-escuro);
+}
+
+.alerta {
+    background-color: #ffefc5;
+    border-left: 6px solid #f39c12;
+    padding: 15px;
+    border-radius: 5px;
+    color: #665200;
+}
+
 /* Filtros de busca */
 .card-filtros {
     background-color: var(--azul-escuro);
@@ -137,7 +200,7 @@ h1 {
     color: var(--branco);
 }
 
-.tabela-movimentacoes table {
+.tabela-movimentacoes table, h2 {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
