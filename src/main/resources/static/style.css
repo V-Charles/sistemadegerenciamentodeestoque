@@ -65,6 +65,41 @@ h1 {
     margin-bottom: 20px;
 }
 
+.btn-padrao {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-padrao:hover {
+    background-color: var(--azul-escuro);
+}
+
+.botoes {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    gap: 20px;
+    /*justify-content: center;*/
+    margin-bottom: 30px;
+}
+
+.botoes-home {
+    justify-content: flex-start;
+}
+
+.botoes-centralizados {
+    justify-content: center;
+    gap: 100px;
+}
+
 /* Conteúdo Home */
 .subtitulo {
     color: var(--preto);
@@ -97,13 +132,8 @@ h1 {
     font-size: 14px;
 }
 
-.atalhos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 30px;
-}
 
+/*
 .atalho-btn {
     display: inline-block;
     text-decoration: none;
@@ -118,7 +148,7 @@ h1 {
 
 .atalho-btn:hover {
     background-color: var(--azul-escuro);
-}
+}*/
 
 .alerta {
     background-color: #ffefc5;
@@ -225,7 +255,7 @@ tr.selecionado {
     background-color: var(--azul-claro);
 }
 
-/* Botões */
+/* Botões 
 .botoes {
     display: flex;
     gap: 20px;
@@ -245,7 +275,7 @@ tr.selecionado {
 
 .botoes button:hover {
     background-color: var(--azul-escuro);
-}
+}*/
 
 
 /* Rodapé */
