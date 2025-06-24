@@ -14,6 +14,7 @@
             </a>
         </div>
         <nav>
+            <a href="index.html">Home</a>
             <a href="produtos.html">Produtos</a>
             <a href="fornecedores.html">Fornecedores</a>
             <a href="relatorio.html">Relatório de movimentações</a>
@@ -21,19 +22,19 @@
     </header>
     <main>
         <h1>Fornecedores</h1>
-        <p class="sub-text">*Use os filtros para buscar por fornecedores específicos</p>
-
-        <section class="filtros">
-            <label>ID:</label>
-            <input type="text">
-            <label>Nome:</label>
-            <input type="text">
-            <label>Telefone:</label>
-            <input type="text">
-            <label>CNPJ:</label>
-            <input type="text">
+        <section class="card-filtros">
+            <p class="sub-text">*Use os filtros para buscar por fornecedores específicos</p>
+            <div class="filtros-campos">
+                <label>ID:</label>
+                <input type="text">
+                <label>Nome:</label>
+                <input type="text">
+                <label>Telefone:</label>
+                <input type="text">
+                <label>CNPJ:</label>
+                <input type="text">
+            </div>
         </section>
-
         <section class="tabela-listagem">
             <table>
                 <thead>
@@ -77,13 +78,11 @@
                 </tbody>
             </table>
         </section>
-
         <div class="botoes">
             <button>Excluir fornecedor</button>
             <button>Editar fornecedor</button>
             <button>Cadastrar novo fornecedor</button>
         </div>
-
     </main>
     <footer>
         <p>&copy; 2025 - Sistema de Gerenciamento de Estoques. Todos os direitos reservados</p>

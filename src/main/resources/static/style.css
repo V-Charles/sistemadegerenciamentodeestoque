@@ -59,28 +59,60 @@ h1 {
 }
 
 .sub-text {
+    font-style: italic;
     font-size: 14px;
-    color: var(--azul-escuro);
+    color: var(--azul-claro);
     margin-bottom: 20px;
 }
 
 /* Filtros de busca */
-.filtros {
+.card-filtros {
     background-color: var(--azul-escuro);
     color: var(--branco);
     padding: 20px;
-    border: 1px solid var(--azul-escuro);
     border-radius: 10px;
     margin-bottom: 30px;
-    display: flex;
-    gap: 10px;
 }
 
-.filtros input {
+.container-filtros {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.filtros-campos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+.filtros-campos label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.filtros-campos input {
+    color: var(--cinza-claro);
     padding: 5px;
-    width: 100%;
-    border: 1px solid var(--azul-escuro);
+    border: 1px solid var(--cinza-claro);
     border-radius: 5px;
+    min-width: 180px;
+}
+
+.filtros-check {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 150px;
+}
+
+.filtros-check label {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* Tabela */
@@ -101,6 +133,23 @@ h1 {
 }
 
 .tabela-listagem th {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+.tabela-movimentacoes table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabela-movimentacoes th, .tabela-movimentacoes td {
+    border: 1px solid var(--cinza-claro);
+    padding: 10px;
+    text-align: center;
+}
+
+.tabela-movimentacoes thead {
     background-color: var(--azul-escuro);
     color: var(--branco);
 }
