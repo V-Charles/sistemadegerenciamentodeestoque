@@ -206,7 +206,38 @@ h1 {
     gap: 5px;
 }
 
-/* Tabela */
+/* Tabelas */
+.tabela {
+    width: 100%;
+    background-color: var(--branco);
+    border-collapse: collapse;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.tabela th, .tabela td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+.tabela thead {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+tbody {
+    cursor: pointer;
+}
+
+tr.selecionado {
+    background-color: var(--azul-claro);
+}
+
+
+/*
 .tabela-listagem table {
     width: 100%;
     background-color: var(--branco);
@@ -251,7 +282,7 @@ tbody {
 
 tr.selecionado {
     background-color: var(--azul-claro);
-}
+}*/
 
 /* Conteúdo Cadastro de produtos*/
 .card-cadastro {
