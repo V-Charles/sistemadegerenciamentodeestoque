@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de movimentações - SGE</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <div id="area-logo">
+            <a href="index.html">
+                <img src="../static/assets/images/InventorySystem.png 1.svg" alt="Logo do sistema">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="fornecedores.html">Fornecedores</a>
+            <a href="relatorio.html">Relatório de movimentações</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Registrar movimentação de produtos</h1>
+        <p class="sub-text">*Antes de salvar, verifique se o produto selecionado está correto.</p>
+        <section class="card-cadastro">
+            <form id="form-movimentacao">
+                <div class="form-group">
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" name="id" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="nome-produto">Nome do produto:</label>
+                    <input type="text" id="nome-produto" name="nome-produto" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="categoria-produto">Categoria do produto:</label>
+                    <input type="text" id="categoria-produto" name="categoria-produto" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="fornecedor">Fornecedor:</label>
+                    <input type="text" id="fornecedor" name="fornecedor" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" required>
+                </div>
+                <div class="form-group">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" readonly>
+                </div>
+                <div class="form-group">
+                    <select id="tipo-movimentacao" name="tipo-movimentacao" required>
+                        <option value="" disabled selected hidden>Selecione uma opção</option>
+                        <option value="Entrada">Entrada</option>
+                        <option value="Saída">Saída</option>
+                        <option value="Reposição">Reposição</option>
+                    </select>
+                </div>
+                
+                <div class="botoes botoes-centralizados">
+                    <button type="reset" class="btn-padrao">Cancelar</button>
+                    <button type="submit" class="btn-padrao">Salvar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Sistema de Gerenciamento de Estoques. Todos os direitos reservados</p>
+        <p>Contato: viniciuscharles3101@gmail.com</p>
+    </footer>
+    <script src="../static/assets/js/movimentacao.js"></script>
+</body>
+</html>
